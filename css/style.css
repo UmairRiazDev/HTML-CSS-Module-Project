@@ -1,19 +1,92 @@
+/*
+Color combinations:
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+color-1 #8a8f98;
+color-2 #1d1e21;
+color-3 #e0633a;
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 /**
  * Add your custom styles below
- * 
- * Remember: 
+ *
+ * Remember:
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
+ *
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 1rem 0;
+}
 
+/* Header styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.logo {
+  width: 4%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #8a8f98;
+  font-weight: 500;
+}
+
+.nav-links a:first-child {
+  color: #1d1e21;
+  font-weight: 600;
+}
+
+.nav-links a:first-child:hover {
+  color: #e0633a;
+  /* font-weight: 500; */
+}
+
+a:hover {
+  color: #e0633a;
+}
+
+/* hero container */
+.hero-container {
+  color: white;
+  background-image: url(../img/first-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
