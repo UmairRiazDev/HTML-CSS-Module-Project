@@ -63,6 +63,13 @@
   padding: 0.8rem;
 }
 
+/* margin between labels and textbox/options */
+input[type="text"],
+select,
+#postcode {
+  margin-top: 0.5rem;
+}
+
 .address {
   grid-column: span 2;
   display: grid;
