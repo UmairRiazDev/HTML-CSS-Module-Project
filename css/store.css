@@ -1,1 +1,17 @@
 /* Styling for Store page */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.store-image {
+  color: white;
+  background-image: url(../img/store-image_by-andrew-neel-unsplash.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  overflow: auto;
+  width: auto;
+  height: 100vh;
+  margin-left: 5rem;
+}
