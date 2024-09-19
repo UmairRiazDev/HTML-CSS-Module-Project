@@ -3,6 +3,7 @@
   --main-color: #e0633a;
   --dark-color: #1d1e21;
   --grey-color: #8a8f98;
+  --light-nav-color: #f9f9f9;
   --light-color: #f0f0f0;
 }
 
@@ -33,14 +34,15 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 /* Header styling */
 nav {
   display: flex;
   justify-content: space-around;
-  padding: 0 4rem;
+  background-color: var(--light-nav-color);
+  padding: 1rem;
 }
 
 .logo {
@@ -78,7 +80,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 1.5rem 0 6rem;
+  margin-bottom: 6rem;
 }
 
 .hero-heading {
