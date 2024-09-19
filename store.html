@@ -36,7 +36,86 @@
     <main>
       <div class="container">
         <div class="order-form">
-          <h1>Order your Karma WiFi device today!</h1>
+          <h1 class="store-hero-heading">
+            Order your Karma WiFi device today!
+          </h1>
+          <form action="">
+            <div class="input-fields">
+              <div class="full-name">
+                <label for="first-name">
+                  First name *
+                  <input type="text" id="first-name" required />
+                </label>
+
+                <label for="last-name">
+                  Last name *
+                  <input type="text" id="last-name" required />
+                </label>
+              </div>
+              <div class="address">
+                <label for="address-primary">
+                  Address *
+                  <input type="text" id="address-primary" required />
+                </label>
+
+                <label for="address-secondary">
+                  Address 2
+                  <input type="text" id="address-secondary" />
+                </label>
+
+                <label for="city">
+                  City *
+                  <select id="city" name="city-choices" required>
+                    <option value="" disabled selected>
+                      Select your city...
+                    </option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Cordoba">Cordoba</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Malaga">Malaga</option>
+                    <option value="Murcia">Murcia</option>
+                    <option value="Seville">Seville</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Zaragoza">Zaragoza</option>
+                  </select>
+                </label>
+
+                <label for="postcode">
+                  Postcode *
+                  <input type="number" id="postcode" required />
+                </label>
+              </div>
+
+              <div class="color-selection">
+                <legend>Select a color:</legend>
+                <label>
+                  <input type="radio" name="color" value="karma-orange" />
+                  Karma orange
+                </label>
+                <label>
+                  <input type="radio" name="color" value="space-grey" />
+                  Space Grey
+                </label>
+              </div>
+
+              <div class="terms-conditions">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="terms-conditions"
+                    value="agree"
+                    required
+                  />
+                  By placing your order you agree to Karma's
+                  <a href="#">Terms and Conditions</a>. *
+                </label>
+              </div>
+
+              <a href="#" class="hero-button store-hero-button"
+                >Place my order</a
+              >
+            </div>
+          </form>
         </div>
         <div class="store-image"></div>
       </div>

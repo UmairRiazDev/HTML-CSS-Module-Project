@@ -19,22 +19,9 @@ html {
   font-size: 62.5%;
 }
 
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-/**
- * Add your custom styles below
- *
- * Remember:
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- *
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  /* padding: 1rem 0; */
 }
 
 /* Header styling */
@@ -57,6 +44,11 @@ nav {
   font-size: 1.6rem;
 }
 
+.nav-links a {
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
 .nav-links a:first-child {
   color: var(--dark-color);
   font-weight: 600;
@@ -67,6 +59,7 @@ nav {
 }
 
 .nav-links a:hover {
+  color: var(--main-color);
   transition: transform 0.1s ease;
   transform: scale(1.05);
 }
@@ -197,12 +190,6 @@ nav {
 /* General Styles */
 a {
   text-decoration: none;
-  color: var(--grey-color);
-  font-weight: 500;
-}
-
-a:hover {
-  color: var(--main-color);
 }
 
 hr {

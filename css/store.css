@@ -4,6 +4,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* hero image of the store page */
 .store-image {
   color: white;
   background-image: url(../img/store-image_by-andrew-neel-unsplash.jpg);
@@ -15,3 +16,5 @@
   height: 100vh;
   margin-left: 5rem;
 }
+
+/* order form styling */
