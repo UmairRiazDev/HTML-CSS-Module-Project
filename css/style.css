@@ -78,7 +78,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 6rem;
 }
 
 .hero-heading {
@@ -103,6 +103,45 @@ nav {
   border-radius: 0.2rem;
 }
 
+/* content section */
+.content {
+  max-width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: start;
+  margin-bottom: 6rem;
+}
+
+.content p:first-child {
+  grid-column: span 3;
+}
+
+.content-heading {
+  font-size: 3rem;
+  color: var(--dark-color);
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.content-imgs {
+  height: 10rem;
+}
+
+.content span {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content span p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 /* General Styles */
 a {
   text-decoration: none;
@@ -112,4 +151,9 @@ a {
 
 a:hover {
   color: var(--main-color);
+}
+
+.grid {
+  /* row-gap: 9.6rem;
+  column-gap: 6.4rem; */
 }
