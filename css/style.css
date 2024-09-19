@@ -30,11 +30,13 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: var(--light-nav-color);
+  height: 8rem;
   padding: 1rem 5rem;
 }
 
 .logo {
-  width: 4%;
+  width: 4rem;
+  height: auto;
 }
 
 .nav-links {
