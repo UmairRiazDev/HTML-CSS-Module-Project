@@ -5,6 +5,7 @@
   --grey-color: #8a8f98;
   --light-nav-color: #f9f9f9;
   --light-color: #f0f0f0;
+  --featured-color: #fcefeb;
 }
 
 /* reset the page */
@@ -152,6 +153,50 @@ nav {
   font-weight: 500;
 }
 
+/* Featured section styling */
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 5rem;
+}
+
+.featured-image {
+  background-image: url(../img/homepage-feature.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
+  height: 30rem;
+}
+
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--featured-color);
+}
+
+.featured-desc {
+  max-width: 60%;
+  font-size: 3rem;
+  font-style: italic;
+  color: #393939;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.featured-quote-style {
+  color: var(--main-color);
+  font-size: 4rem;
+}
+
+.featured-button {
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+}
+
+/* Footer section styling */
 .footer-section {
   display: flex;
   flex-direction: column;
