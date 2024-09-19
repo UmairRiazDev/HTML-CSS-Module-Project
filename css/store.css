@@ -107,10 +107,10 @@ select:valid {
   font-style: normal;
 }
 
-/* .color-selection {
+.color-selection {
   grid-column: span 2;
   margin-top: 2rem;
-} */
+}
 
 #color-selection {
   accent-color: var(--main-color);
