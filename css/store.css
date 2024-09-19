@@ -36,6 +36,7 @@
   max-width: 80rem;
   margin: 0 auto;
   padding: 5rem;
+  font-size: 1.5rem;
 }
 
 .form-fields {
@@ -85,10 +86,39 @@
   gap: 2rem;
 }
 
+/* Style the select element */
+select {
+  padding: 0.8rem;
+  color: #555;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+select {
+  font-style: italic;
+}
+
+select:focus option,
+select option {
+  font-style: normal;
+}
+
+select:valid {
+  font-style: normal;
+}
+
 /* .color-selection {
   grid-column: span 2;
   margin-top: 2rem;
 } */
+
+#color-selection {
+  accent-color: var(--main-color);
+}
+
+.color-selection label {
+  margin-right: 2rem;
+}
 
 .color-selection legend {
   margin-bottom: 1rem;
@@ -99,13 +129,17 @@
   margin-top: 2rem;
 }
 
+/* #terms-conditions {
+  accent-color: var(--main-color);
+} */
+
 .store-hero-button {
   display: inline-block;
   padding: 1.2rem 2.4rem;
   background-color: var(--main-color);
   color: var(--light-color);
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   margin-top: 2rem;
 }
 
@@ -113,4 +147,39 @@
   opacity: 0.9;
   transition: transform 0.1s ease;
   transform: scale(1.05);
+}
+
+.terms-conditions a {
+  color: var(--main-color);
+}
+
+.terms-conditions a:hover {
+  opacity: 0.8;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid #ccc;
+  border-radius: 0.2rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  background-size: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("../img/checkmark.svg");
+}
+
+/* general styling */
+input {
+  border: 1px solid var(--grey-color);
+  border-radius: 0.5rem;
 }

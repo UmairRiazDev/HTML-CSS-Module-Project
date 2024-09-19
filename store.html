@@ -68,7 +68,12 @@
                   <label for="city">
                     City *
                     <select id="city" name="city-choices" required>
-                      <option value="" disabled selected>
+                      <option
+                        value=""
+                        class="placeholder-city"
+                        disabled
+                        selected
+                      >
                         Select your city...
                       </option>
                       <option value="Barcelona">Barcelona</option>
@@ -92,11 +97,21 @@
               <div class="color-selection">
                 <legend>Select a color:</legend>
                 <label>
-                  <input type="radio" name="color" value="karma-orange" />
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color-selection"
+                    value="karma-orange"
+                  />
                   Karma orange
                 </label>
                 <label>
-                  <input type="radio" name="color" value="space-grey" />
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color-selection"
+                    value="space-grey"
+                  />
                   Space Grey
                 </label>
               </div>
@@ -106,6 +121,7 @@
                   <input
                     type="checkbox"
                     name="terms-conditions"
+                    id="terms-conditions"
                     value="agree"
                     required
                   />
@@ -114,7 +130,7 @@
                 </label>
               </div>
             </div>
-            <!-- <a href="#" class="store-hero-button"></a> -->
+
             <button type="submit" class="store-hero-button">
               Place my order
             </button>
