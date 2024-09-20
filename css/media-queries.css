@@ -1,0 +1,39 @@
+/* Styles for tablets (768px and smaller) */
+@media only screen and (max-width: 768px) {
+  .hero-container {
+    height: 500px;
+  }
+  .hero-heading {
+    font-size: 4rem;
+  }
+  .hero-desc {
+    font-size: 2rem;
+  }
+  .hero-button {
+    font-size: 1.4rem;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+  .featured-desc {
+    max-width: 80%;
+  }
+}
+
+/* Styles for mobile devices (600px and smaller) */
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  .hero-container {
+    height: 400px;
+  }
+  .content span p {
+    font-size: 1.3rem;
+  }
+  .featured-desc {
+    max-width: 90%;
+  }
+}
