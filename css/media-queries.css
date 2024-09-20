@@ -1,3 +1,17 @@
+@media only screen and (max-width: 1000px) {
+  .full-name {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .form-group label,
+  .form-group input {
+    display: block;
+  }
+  .form-group input {
+    width: 100%;
+  }
+}
+
 /* Styles for tablets (768px and smaller) */
 @media only screen and (max-width: 768px) {
   .hero-container {
@@ -19,6 +33,10 @@
   .featured-desc {
     max-width: 80%;
   }
+
+  .city-postcode {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Styles for mobile devices (600px and smaller) */
@@ -35,5 +53,18 @@
   }
   .featured-desc {
     max-width: 90%;
+  }
+  .color-selection label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .terms-conditions {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav-links {
+    flex-wrap: wrap;
   }
 }

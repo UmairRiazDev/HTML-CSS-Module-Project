@@ -15,7 +15,7 @@
   overflow: auto;
   width: auto;
   height: 100vh;
-  margin-left: 5rem;
+  /* margin-left: 2rem; */
 }
 
 /* order form styling */
@@ -33,7 +33,7 @@
 }
 
 .order-form {
-  max-width: 80rem;
+  /* max-width: 80rem; */
   margin: 0 auto;
   padding: 5rem;
   font-size: 1.5rem;
