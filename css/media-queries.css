@@ -41,6 +41,19 @@
 
 /* Styles for mobile devices (600px and smaller) */
 @media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .order-form {
+    order: 2;
+  }
+
+  .store-image {
+    order: 1;
+    height: 50vh;
+  }
+
   .nav-links {
     gap: 1.2rem;
   }
