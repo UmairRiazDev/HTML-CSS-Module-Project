@@ -47,11 +47,12 @@
 
   .order-form {
     order: 2;
+    padding-top: 2rem;
   }
 
   .store-image {
     order: 1;
-    height: 50vh;
+    height: 24rem;
   }
 
   .nav-links {
