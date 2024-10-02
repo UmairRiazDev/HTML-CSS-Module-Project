@@ -23,10 +23,6 @@
   .hero-desc {
     font-size: 2rem;
   }
-  /* .hero-button {
-    font-size: 1.4rem;
-  } */
-
   .content {
     max-width: 90%;
   }
@@ -68,7 +64,7 @@
 
   .menu-icon {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 1.5rem;
     right: 3rem;
     z-index: 1000;
