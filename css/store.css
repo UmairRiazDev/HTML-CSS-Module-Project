@@ -171,7 +171,7 @@ select:valid {
 }
 
 /* Hide the default checkbox */
-input[type="checkbox"] {
+.hide-checkbox[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   width: 2rem;

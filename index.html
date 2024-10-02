@@ -19,21 +19,27 @@
   </head>
   <body>
     <header>
-      <nav>
+      <div class="logo-nav">
         <div class="logo">
           <a href="index.html">
             <img src="img/karma-logo.svg" alt="karma logo" />
           </a>
         </div>
-        <div class="nav-links">
-          <a href="index.html">Meet Karma</a>
-          <a href="#">How it works</a>
-          <a href="store.html">Store</a>
-          <a href="#">Blog</a>
-          <a href="#">Help</a>
-          <a href="#">Login</a>
-        </div>
-      </nav>
+
+        <nav class="main-nav">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">☰</label>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Meet Karma</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
