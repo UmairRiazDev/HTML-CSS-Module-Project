@@ -63,9 +63,6 @@
   .hero-container {
     height: 400px;
   }
-  .content span p {
-    font-size: 1.3rem;
-  }
   .featured-desc {
     max-width: 90%;
   }
@@ -79,10 +76,29 @@
   #postcode {
     max-width: 12rem;
   }
+  .btn-container-store {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .store-hero-button {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .nav-links {
     flex-wrap: wrap;
+  }
+  .hero-container {
+    padding: 0 5rem;
+    /* margin-bottom: 1rem; */
+  }
+  .content-heading {
+    text-align: center;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 2rem;
   }
 }
