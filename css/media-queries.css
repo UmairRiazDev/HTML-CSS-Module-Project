@@ -37,6 +37,9 @@
   .city-postcode {
     grid-template-columns: 1fr;
   }
+  #postcode {
+    max-width: 12rem;
+  }
 }
 
 /* Styles for mobile devices (600px and smaller) */
@@ -46,13 +49,11 @@
   }
 
   .order-form {
-    order: 2;
     padding-top: 2rem;
   }
 
   .store-image {
-    order: 1;
-    height: 24rem;
+    height: 40rem;
   }
 
   .nav-links {
@@ -74,6 +75,9 @@
   }
   .terms-conditions {
     margin-top: 1rem;
+  }
+  #postcode {
+    max-width: 12rem;
   }
 }
 
