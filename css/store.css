@@ -197,3 +197,7 @@ input {
   border: 1px solid var(--grey-color);
   border-radius: 0.5rem;
 }
+
+a.active {
+  color: var(--main-color);
+}

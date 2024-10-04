@@ -26,6 +26,13 @@
   .content {
     max-width: 90%;
   }
+  .content-imgs {
+    height: 10rem;
+  }
+  .content span p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
   .featured-desc {
     max-width: 80%;
   }
@@ -107,9 +114,6 @@
   }
   .terms-conditions {
     margin-top: 1rem;
-  }
-  #postcode {
-    max-width: 12rem;
   }
   .btn-container-store {
     margin: 2rem auto;

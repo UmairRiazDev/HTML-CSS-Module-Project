@@ -42,7 +42,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 3.2rem;
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.6rem;
@@ -154,7 +154,7 @@ body {
 }
 
 .content-imgs {
-  height: 10rem;
+  height: 12rem;
 }
 
 .content span {
@@ -164,7 +164,7 @@ body {
 }
 
 .content span p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -236,15 +236,12 @@ body {
     hue-rotate(174deg) brightness(96%) contrast(94%); */
   filter: invert(59%) sepia(76%) saturate(656%) hue-rotate(333deg)
     brightness(100%) contrast(99%);
+  height: 2rem;
 }
 
 .social-links a:hover {
   transition: transform 0.1s ease;
   transform: scale(1.5);
-}
-
-.social-icon {
-  height: 2rem;
 }
 
 .copyright {
