@@ -17,21 +17,27 @@
   </head>
   <body>
     <header>
-      <nav>
+      <div class="logo-nav">
         <div class="logo">
           <a href="index.html">
             <img src="img/karma-logo.svg" alt="karma logo" />
           </a>
         </div>
-        <div class="nav-links">
-          <a href="index.html">Meet Karma</a>
-          <a href="#">How it works</a>
-          <a href="store.html" class="active">Store</a>
-          <a href="#">Blog</a>
-          <a href="#">Help</a>
-          <a href="#">Login</a>
-        </div>
-      </nav>
+
+        <nav class="main-nav">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">☰</label>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Meet Karma</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="store.html" class="active">Store</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -57,7 +63,7 @@
               <div class="address">
                 <label for="address-primary">
                   Address *
-                  <input type="text" id="address-primary dada" required />
+                  <input type="text" id="address-primary" required />
                 </label>
 
                 <label for="address-secondary">
@@ -89,7 +95,7 @@
                   </label>
 
                   <label for="postcode">
-                    Postcode *
+                    <div>Postcode *</div>
                     <input type="number" id="postcode" required />
                   </label>
                 </div>
@@ -118,23 +124,26 @@
               </div>
 
               <div class="terms-conditions">
-                <label>
-                  <input
-                    type="checkbox"
-                    name="terms-conditions"
-                    id="terms-conditions"
-                    value="agree"
-                    required
-                  />
+                <input
+                  type="checkbox"
+                  name="terms-conditions"
+                  id="terms-agree"
+                  value="agree"
+                  required
+                  class="hide-checkbox"
+                />
+                <label for="terms-agree">
                   By placing your order you agree to Karma's
                   <a href="#">Terms and Conditions</a>. *
                 </label>
               </div>
             </div>
 
-            <button type="submit" class="store-hero-button">
-              Place my order
-            </button>
+            <div class="btn-container-store">
+              <button type="submit" class="store-hero-button">
+                Place my order
+              </button>
+            </div>
           </form>
         </div>
 

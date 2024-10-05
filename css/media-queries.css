@@ -23,12 +23,15 @@
   .hero-desc {
     font-size: 2rem;
   }
-  .hero-button {
-    font-size: 1.4rem;
-  }
-
   .content {
     max-width: 90%;
+  }
+  .content-imgs {
+    height: 10rem;
+  }
+  .content span p {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
   .featured-desc {
     max-width: 80%;
@@ -37,6 +40,48 @@
   .city-postcode {
     grid-template-columns: 1fr;
   }
+  #postcode {
+    max-width: 12rem;
+  }
+
+  /* nav to menu */
+  .main-nav {
+    padding: 0;
+    height: 0;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    font-size: 2rem;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    z-index: 1000;
+  }
+
+  /* When the checkbox is checked, show the menu */
+  .menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+  /* nav to menu end */
 }
 
 /* Styles for mobile devices (600px and smaller) */
@@ -46,12 +91,11 @@
   }
 
   .order-form {
-    order: 2;
+    padding-top: 2rem;
   }
 
   .store-image {
-    order: 1;
-    height: 50vh;
+    height: 40rem;
   }
 
   .nav-links {
@@ -60,9 +104,6 @@
 
   .hero-container {
     height: 400px;
-  }
-  .content span p {
-    font-size: 1.3rem;
   }
   .featured-desc {
     max-width: 90%;
@@ -74,10 +115,38 @@
   .terms-conditions {
     margin-top: 1rem;
   }
+  .btn-container-store {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .store-hero-button {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .nav-links {
     flex-wrap: wrap;
+  }
+  .hero-container {
+    padding: 0 5rem;
+    /* margin-bottom: 1rem; */
+  }
+  .content-heading {
+    text-align: center;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  .featured {
+    grid-template-columns: 1fr;
+  }
+  .featured-desc {
+    padding: 4rem 0.5rem 2rem 0.5rem;
+  }
+  .hero-button {
+    margin-bottom: 4rem;
   }
 }
